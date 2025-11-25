@@ -9,22 +9,17 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        tr.linha{
-            background-color: gray;
-        }
-
         table{
             width: 300px;
+            height: 300px;
             border-collapse: collapse;/*Faz com que os espaços entre as linhas sumam.*/
         }
 
         td{
             border: 1px solid black;
             padding: 3px;
-        }
-
-        td.dado{
-            background-color: yellowgreen;
+            text-align: center;/*Alinhamento horizontal*/
+            vertical-align: ;/*Para alinhar os dados de uma tabela verticalmente é necessario o "vertical-align"*/
         }
     </style>
 </head>
@@ -42,7 +37,7 @@
             <td>B2</td>
             <td>C1</td>
         </tr>
-        <tr class="linha">
+        <tr>
             <td>A2</td>
             <td>B2</td>
             <td>C2</td>
@@ -50,7 +45,7 @@
         <tr>
             <td>A3</td>
             <td>B3</td>
-            <td class="dado">C3</td>
+            <td>C3</td>
         </tr>
     </table>
 </body>
