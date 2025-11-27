@@ -18,13 +18,29 @@
             border: 1px solid black;
             padding: 10px;
         }
+
+        caption{
+            font-size: 1.2em;
+            font-weight: bold;
+            background-color: lightgrey;
+            padding: 10px;
+        }
         thead{
-            background-color: gray;
+            background-color: rgb(49, 48, 48);
             color: white;
         }
         td.numero{
             text-align: right;
             
+        }
+
+        tfoot{
+            background-color:  rgb(49, 48, 48);
+            color: white;
+        }
+        /*Usamos essa pseudoclass para especificar os itens que irei mexer. Posso brincar com par,impar, de 2 em 2 numeros entre outras coisas.*/
+        tbody > tr:nth-child(odd){
+            background-color: lightgrey;
         }
     </style>
 </head>
@@ -33,6 +49,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -42,10 +59,12 @@
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <!--scope serve para dizer ao navegador conseguir analisar os dados dde forma coerente.-->
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -160,7 +179,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="numero">210.147.125</td>
             </tr>
         </tfoot>
