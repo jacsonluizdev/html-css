@@ -12,6 +12,7 @@
         table{
             width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
@@ -29,9 +30,15 @@
             background-color: rgb(49, 48, 48);
             color: white;
         }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;/*Posição que ficará "grudado"*/
+            background-color: rgb(49, 48, 48);;
+        }
+
         td.numero{
             text-align: right;
-            
         }
 
         tfoot{
@@ -62,7 +69,7 @@
         <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <!--scope serve para dizer ao navegador conseguir analisar os dados dde forma coerente.-->
+                <!--scope serve para o navegador conseguir analisar os dados de forma coerente.-->
                 <th scope="col">Estado</th>
                 <th scope="col" style="width: 50px;">População</th>
             </tr>
