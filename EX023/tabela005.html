@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios de Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+            border: 1px solid black;
+            background-color: grey;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+       th{
+            position: sticky;
+            top: 0px;
+            background-color: grey;
+        }
+        tr:nth-child(odd){
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabela</h1>
+    <table>
+        <colgroup><!--Desta forma posso configurar uma coluna inteira com apenas um parametro.-->
+        <!--Posso utilizar o parametro "Span" e definir a quantidade de colunas que irão receber o estilo/configuração-->
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cgroup" span="2">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Cláudio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Hélio</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Vendedor</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>39</td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <td>Otávio</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Nutricionista</td>
+        </tr>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nisi modi itaque quos autem optio qui doloremque quisquam veniam numquam error saepe, deserunt dicta ea non officia necessitatibus dolor tempore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas excepturi culpa, porro cum reiciendis repellendus? Provident, minus sint tempora a ipsam harum dicta neque. Ab mollitia saepe sed similique reiciendis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae aperiam corrupti quidem ipsam repudiandae, laudantium laborum magnam at natus esse facere, laboriosam tenetur est nostrum non mollitia velit eveniet nulla.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium dolorum modi nulla quidem quaerat laboriosam, iste explicabo. Dolore nam, ex nesciunt distinctio, deserunt molestiae voluptatem eaque harum doloremque laboriosam officia!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non cupiditate vitae voluptatibus cum ut nemo quidem. Debitis, eius dolorem sequi placeat est recusandae, officiis consectetur iusto magnam repellendus amet error.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nisi sequi ab. At, porro aperiam aliquam ipsam ipsum eius cumque, repudiandae vero pariatur maxime dicta recusandae iste, provident aliquid quae!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium veritatis accusamus eveniet nisi, dignissimos, sit, porro laborum vero odit odio quibusdam dicta dolore quod itaque reiciendis illum architecto excepturi distinctio.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi corporis nisi recusandae magnam, maiores reprehenderit dolor veniam corrupti nesciunt atque tenetur debitis consectetur eum autem perferendis saepe unde. Deserunt, reprehenderit.
+        loe
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat blanditiis iure molestiae eos, voluptates, veniam vel quasi unde recusandae laudantium harum laborum qui amet nemo veritatis alias aspernatur! Qui, tenetur.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, a at impedit, corrupti beatae inventore odit ex quisquam temporibus quaerat, magni ea reprehenderit! Distinctio non molestias odit, blanditiis aperiam totam?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui magni impedit ducimus corporis omnis voluptate error tempora quo atque dolores, quae quisquam ad quia fugit enim voluptatum quam similique minus.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium voluptatum necessitatibus, eos id voluptas nulla modi ut sed aliquid tempora nostrum libero architecto vero autem, iure repellat. Aliquam, labore laudantium.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero minima dolorem incidunt quae! Quos, repellendus natus ipsa voluptatum, inventore veniam dolor enim obcaecati odit nostrum, fuga tempore numquam incidunt laboriosam.
+    </p>
+
+</body>
+</html>
