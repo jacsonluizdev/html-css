@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="" method="post">
+        <p>
+            <label for="iest">Estado:</label>
+            <!--Select é utilizado para criar um menu suspenso com opções predefinidas, um dos contras é que devemos definir um valor para cada opção -->
+            <select name="estado" id="iest">
+                <!--Podemos utilizar o optgroup para agrupar opções e o atributo label para definir o rótulo do grupo -->
+                <optgroup label="Região Sudeste">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <!--Utilizamos o atributo selected para definir uma opção como a padrão -->
+                    <option value="SP" selected>São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="CE">Ceará</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="profissao" id="iprof" placeholder="Digite sua profissão" required list="lstprof">
+            <!--O datalist utilizado em conjunto com o input cria uma lista de opções sugeridas para um campo de entrada, o usuário pode escolher uma das opções ou digitar uma nova -->
+            <datalist id="lstprof">
+                <optgroup label="Profissões">
+                    <option value="ADM">Administração</option>
+                    <option value="Eng">Engenharia</option>
+                    <option value="Med">Medicina</option>
+                </optgroup>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="mensagem" id="imsg" placeholder="Digite sua mensagem"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
