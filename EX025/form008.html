@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="" method="post">
+        <p>
+            <label for="in1">Número 1:</label>
+            <input type="number" id="in1" name="numero1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+
+        <p>
+            <label for="in2">Número 2:</label>
+            <input type="number" id="in2" name="numero2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <!--"isoma" é o id do elemento <output> que exibe a soma dos valores inseridos nos campos "Número 1" e "Número 2". O atributo "oninput" nos campos de entrada chama uma função JavaScript que atualiza o conteúdo do elemento "isoma" sempre que o usuário digita um número, garantindo que a soma seja exibida em tempo real. -->
+        <p>
+            <label for="isoma">Soma:</label>
+            <output id="isoma">0</output>
+        </p>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
